@@ -1,7 +1,5 @@
-"use client";
-
 import "./globals.css";
-import { ThemeProvider } from "next-themes";
+import ThemeProvider from "@/components/ThemeProvider";
 
 export default function RootLayout({
   children,
@@ -10,14 +8,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem={false}
-        >
-          {children}
-        </ThemeProvider>
+      <body className="min-h-screen bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
