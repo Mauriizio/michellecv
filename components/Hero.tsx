@@ -54,9 +54,15 @@ export default function Hero() {
         </div>
         <div className="order-1 relative lg:order-2">
           <div className="rounded-3xl border border-border bg-gradient-to-br from-primary/15 via-surface to-secondary/15 p-6 shadow-sm">
-            <div className="relative overflow-hidden rounded-2xl">
-              <div className="h-44 w-full rounded-2xl bg-gradient-to-r from-primary/20 via-secondary/10 to-primary/5" />
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.7),_transparent_55%)]" />
+            <div className="relative overflow-hidden rounded-2xl border border-border/60 bg-surface">
+              <div className="relative h-44 w-full sm:h-48">
+                <Image
+                  src="/rbt.png"
+                  alt="RBT credential"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
             <div className="mt-6 space-y-2 text-center">
               <p className="text-sm font-semibold text-foreground">

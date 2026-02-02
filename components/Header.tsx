@@ -1,4 +1,5 @@
 import ThemeToggle from "@/components/ThemeToggle";
+import Image from "next/image";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -15,8 +16,15 @@ export default function Header() {
           href="#home"
           className="flex items-center gap-3 text-sm font-semibold tracking-wide text-foreground"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/15 text-primary">
-            MH
+          <span className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-border bg-surface shadow-sm">
+            <Image
+              src="/logo.png"
+              alt="Michelle Hernández logo"
+              width={50}
+              height={50}
+              className="h-full w-full object-contain"
+              priority
+            />
           </span>
           <span className="hidden sm:inline">Michelle Hernández, RBT</span>
         </a>
