@@ -1,13 +1,13 @@
 import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Lora, Nunito } from "next/font/google";
 
-const inter = Inter({
+const nunito = Nunito({
   subsets: ["latin"],
   variable: "--font-sans",
 });
 
-const playfair = Playfair_Display({
+const lora = Lora({
   subsets: ["latin"],
   variable: "--font-display",
 });
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${playfair.variable} min-h-screen bg-[var(--background)] text-[var(--foreground)] antialiased`}
+        className={`${nunito.variable} ${lora.variable} min-h-screen bg-background text-foreground antialiased`}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>
