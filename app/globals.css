@@ -8,7 +8,7 @@
   --accent: #d97ca4;
 }
 
-.dark {
+:root.dark {
   --background: #0f172a;
   --foreground: #f8fafc;
   --card: #111827;
