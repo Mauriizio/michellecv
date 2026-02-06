@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <section id="contact" className="section-shell px-6 py-10 sm:px-10 lg:px-12">
       <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-start">
-        <div className="space-y-4">
+        <div className="space-y-4 text-center md:text-left">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary">Contact</p>
           <h2 className="text-3xl font-semibold text-foreground">Let’s discuss your child’s therapy goals</h2>
           <p className="text-base leading-relaxed text-muted">
@@ -11,7 +11,7 @@ export default function Contact() {
           </p>
           <a
             href="https://wa.me/18633496840"
-            className="shine-hover inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground"
+            className="shine-hover mx-auto inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground md:mx-0"
           >
             Message on WhatsApp
           </a>

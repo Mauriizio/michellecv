@@ -24,10 +24,10 @@ const services = [
 export default function Services() {
   return (
     <section id="services" className="section-shell px-6 py-10 sm:px-10 lg:px-12">
-      <div className="space-y-3">
+      <div className="space-y-3 text-center lg:text-left">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary">Services</p>
         <h2 className="text-3xl font-semibold text-foreground">A modern ABA experience built around outcomes</h2>
-        <p className="max-w-3xl text-base leading-relaxed text-muted">
+        <p className="mx-auto max-w-3xl text-base leading-relaxed text-muted lg:mx-0">
           Every plan is customized to real family needs, with progress tracking, calm structure, and communication you
           can trust.
         </p>
@@ -37,7 +37,7 @@ export default function Services() {
         {services.map((service) => (
           <article
             key={service.title}
-            className="lift-hover group rounded-2xl border border-border bg-surface-alt p-6"
+            className="lift-hover group rounded-2xl border border-border bg-surface-alt p-6 text-center md:text-left"
           >
             <h3 className="text-lg font-semibold text-foreground transition group-hover:text-primary">{service.title}</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted">{service.description}</p>
