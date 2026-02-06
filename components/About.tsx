@@ -25,7 +25,7 @@ export default function About() {
         <figure className="lift-hover overflow-hidden rounded-[1.8rem] border border-border bg-surface-alt p-3">
           <div className="relative h-[22rem] overflow-hidden rounded-[1.25rem]">
             <Image
-              src="/michelle-hero-placeholder.svg"
+              src="/perfil.png"
               alt="Michelle working in a child-centered therapy environment"
               fill
               className="object-cover transition duration-500 hover:scale-105"

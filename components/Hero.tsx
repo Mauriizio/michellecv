@@ -12,12 +12,12 @@ export default function Hero() {
         <div className="relative order-1 mx-auto w-full max-w-sm lg:order-2 lg:max-w-none">
           <div className="lift-hover overflow-hidden rounded-[1.8rem] border border-border bg-surface-alt p-3">
             <div className="relative h-[21rem] overflow-hidden rounded-[1.3rem] sm:h-[23rem]">
-              <Image src="/perfil.png" alt="Michelle Hernandez, RBT" fill className="object-cover transition duration-500 hover:scale-105" />
+              <Image src="/mano.png" alt="Michelle Hernandez, RBT" fill className="object-contain transition duration-500 hover:scale-105" />
             </div>
           </div>
-          <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-border/80 bg-surface/92 px-4 py-3 text-center backdrop-blur">
+          <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-border/80 bg-surface/50 px-4 py-3 text-center backdrop-blur">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary">Registered Behavior Technician</p>
-            <p className="mt-1 text-sm text-muted">Focused on emotional regulation, communication skills, and family-centered routines.</p>
+            <p className="mt-1 text-sm text-black rounded-xl bg-surface/30">Focused on emotional regulation, communication skills, and family-centered routines.</p>
           </div>
         </div>
 

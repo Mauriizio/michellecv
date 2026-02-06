@@ -6,9 +6,9 @@ import { useMemo, useState } from "react";
 const tags = ["Sensory Play", "Language Games", "Positive Reinforcement", "Social Skills"];
 
 const gallery = [
-  { src: "/michelle-hero-placeholder.svg", alt: "Play-based ABA activity with children" },
-  { src: "/perfil.png", alt: "Michelle guiding a child-centered session" },
-  { src: "/rbt.png", alt: "Professional ABA environment and materials" },
+  { src: "/clase1.png", alt: "Play-based ABA activity with children" },
+  { src: "/motriz2.png", alt: "Michelle guiding a child-centered session" },
+  { src: "/ia1.png", alt: "Professional ABA environment and materials" },
 ];
 
 export default function PlayfulShowcase() {
@@ -54,9 +54,7 @@ export default function PlayfulShowcase() {
             >
               ← Prev
             </button>
-            <p className="text-xs font-semibold text-muted">
-              {index + 1} / {gallery.length}
-            </p>
+            
             <button
               type="button"
               onClick={next}
