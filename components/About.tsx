@@ -1,39 +1,37 @@
+import Image from "next/image";
+
 export default function About() {
   return (
-    <section
-      id="about"
-      className="rounded-3xl border border-border bg-surface px-6 py-10 shadow-sm sm:px-10 lg:px-12"
-    >
-      <div className="grid gap-8 md:grid-cols-2 md:items-center">
+    <section id="about" className="section-shell px-6 py-10 sm:px-10 lg:px-12">
+      <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div className="space-y-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary">
-            About Michelle
-          </p>
-          <h2 className="text-2xl font-semibold text-foreground">
-            A calm, trusted partner for your family
-          </h2>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary">About Michelle</p>
+          <h2 className="text-3xl font-semibold text-foreground">Trusted care with clinical structure</h2>
           <p className="text-base leading-relaxed text-muted">
-            Michelle is a Registered Behavior Technician with experience
-            supporting children at different developmental stages. She designs
-            safe, structured environments where every child feels understood
-            and valued.
+            Michelle combines empathy and discipline to create safe learning environments where children develop
+            confidence and practical independence.
           </p>
           <p className="text-base leading-relaxed text-muted">
-            Families describe her sessions as warm, organized, and focused on
-            practical gains that make daily routines easier.
+            Families value her clear communication, predictable session flow, and commitment to meaningful improvements
+            in daily routines.
           </p>
-        </div>
-        <div className="rounded-3xl border border-border bg-surface-alt p-8 shadow-sm">
-          <h3 className="text-lg font-semibold text-foreground">
-            Core focuses
-          </h3>
-          <ul className="mt-4 space-y-3 text-sm text-muted">
-            <li>• Emotional regulation and calming strategies</li>
-            <li>• Daily living skills and routines</li>
-            <li>• Positive reinforcement and behavior plans</li>
-            <li>• Coordination with clinical supervisors</li>
+          <ul className="space-y-2 text-sm text-muted">
+            <li>• Emotional regulation and behavior support</li>
+            <li>• Daily living routines and independence goals</li>
+            <li>• Positive reinforcement with measurable milestones</li>
           </ul>
         </div>
+
+        <figure className="lift-hover overflow-hidden rounded-[1.8rem] border border-border bg-surface-alt p-3">
+          <div className="relative h-[22rem] overflow-hidden rounded-[1.25rem]">
+            <Image
+              src="/michelle-hero-placeholder.svg"
+              alt="Michelle working in a child-centered therapy environment"
+              fill
+              className="object-cover transition duration-500 hover:scale-105"
+            />
+          </div>
+        </figure>
       </div>
     </section>
   );

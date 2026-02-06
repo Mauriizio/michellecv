@@ -2,52 +2,46 @@ const services = [
   {
     title: "In-home ABA sessions",
     description:
-      "Structured, engaging plans tailored to your child's goals and family routine.",
+      "Structured one-on-one intervention in the child’s natural environment to reinforce practical daily skills.",
   },
   {
-    title: "Parent coaching",
+    title: "Parent training and coaching",
     description:
-      "Practical guidance to reinforce skills and keep progress consistent.",
+      "Clear and actionable guidance that empowers families to support consistency outside formal sessions.",
   },
   {
-    title: "Social skills and communication",
+    title: "Communication and social goals",
     description:
-      "Support with language, turn-taking, and positive peer relationships.",
+      "Programs focused on language growth, emotional expression, and positive peer interaction.",
+  },
+  {
+    title: "Clinical coordination",
+    description:
+      "Collaborative implementation aligned with supervising clinicians and measurable treatment plans.",
   },
 ];
 
 export default function Services() {
   return (
-    <section
-      id="services"
-      className="rounded-3xl border border-border bg-surface px-6 py-10 shadow-sm sm:px-10 lg:px-12"
-    >
+    <section id="services" className="section-shell px-6 py-10 sm:px-10 lg:px-12">
       <div className="space-y-3">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary">
-          Services
-        </p>
-        <h2 className="text-2xl font-semibold text-foreground">
-          Personalized ABA support at every stage
-        </h2>
-        <p className="text-base leading-relaxed text-muted">
-          Sessions are designed around your child's strengths and respect your
-          family schedule. Each plan aligns with clinical goals and measurable
-          outcomes.
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary">Services</p>
+        <h2 className="text-3xl font-semibold text-foreground">A modern ABA experience built around outcomes</h2>
+        <p className="max-w-3xl text-base leading-relaxed text-muted">
+          Every plan is customized to real family needs, with progress tracking, calm structure, and communication you
+          can trust.
         </p>
       </div>
-      <div className="mt-8 grid gap-4 md:grid-cols-3">
+
+      <div className="mt-8 grid gap-4 md:grid-cols-2">
         {services.map((service) => (
-          <div
+          <article
             key={service.title}
-            className="rounded-2xl border border-border bg-surface-alt p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            className="lift-hover group rounded-2xl border border-border bg-surface-alt p-6"
           >
-            <h3 className="text-lg font-semibold text-foreground">
-              {service.title}
-            </h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted">
-              {service.description}
-            </p>
-          </div>
+            <h3 className="text-lg font-semibold text-foreground transition group-hover:text-primary">{service.title}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted">{service.description}</p>
+          </article>
         ))}
       </div>
     </section>
