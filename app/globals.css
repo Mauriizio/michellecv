@@ -17,24 +17,6 @@
 }
 
 :root.dark {
-<<<<<<< ours
-<<<<<<< ours
-  --background: #070d1c;
-  --foreground: #e8eeff;
-  --muted: #9fadd0;
-  --surface: #101b36;
-  --surface-alt: #172444;
-  --border: #2a3c68;
-  --primary: #7f9fff;
-  --primary-foreground: #091431;
-  --secondary: #4ed5c6;
-  --secondary-foreground: #052420;
-  --accent-coral: #ff8f8f;
-  --accent-yellow: #ffd26c;
-  --accent-sky: #7cc6ff;
-=======
-=======
->>>>>>> theirs
   --background: #151b2b;
   --foreground: #edf2ff;
   --muted: #b8c2da;
@@ -48,10 +30,6 @@
   --accent-coral: #ffa0a0;
   --accent-yellow: #ffdc85;
   --accent-sky: #95d1ff;
-<<<<<<< ours
->>>>>>> theirs
-=======
->>>>>>> theirs
 }
 
 :root.light {
