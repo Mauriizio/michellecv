@@ -57,17 +57,30 @@ export default function Header() {
         </div>
 
         {open && (
-          <nav className="mt-3 grid gap-2 rounded-xl border border-border bg-surface-alt p-3 xl:hidden">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-2 text-sm font-medium text-foreground transition hover:bg-surface"
-              >
-                {item.label}
-              </a>
-            ))}
+          <nav className="relative mt-3 overflow-hidden rounded-xl border border-border bg-surface-alt p-3 xl:hidden">
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+              <Image
+                src="/logo.png"
+                alt=""
+                width={220}
+                height={220}
+                aria-hidden="true"
+                className="h-auto w-44 opacity-[0.18]"
+              />
+            </div>
+
+            <div className="relative grid justify-items-center gap-2 text-center">
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className="w-full rounded-lg px-3 py-2 text-center text-sm font-medium text-foreground transition hover:bg-surface"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
           </nav>
         )}
       </div>
