@@ -12,10 +12,10 @@ export default function Hero() {
         <div className="relative order-1 mx-auto w-full max-w-[17rem] sm:max-w-sm lg:order-2 lg:max-w-none">
           <div className="lift-hover overflow-hidden rounded-[1.5rem] border border-border bg-surface-alt p-2.5 sm:rounded-[1.8rem] sm:p-3">
             <div className="relative h-[13rem] overflow-hidden rounded-[1.1rem] sm:h-[23rem] sm:rounded-[1.3rem]">
-              <Image src="/mano.png" alt="Michelle Hernandez, RBT" fill className="object-contain transition duration-500 hover:scale-105" />
+              <Image src="/perfil2.png" alt="Michelle Hernandez, RBT" fill className="object-cover transition duration-500 hover:scale-105" />
             </div>
           </div>
-          <div className="absolute bottom-3 left-3 right-3 rounded-xl border border-border/80 bg-surface/60 px-3 py-2 text-center backdrop-blur sm:bottom-4 sm:left-4 sm:right-4 sm:rounded-2xl sm:px-4 sm:py-3">
+          <div className="absolute bottom-3 left-3 right-3 rounded-xl border border-border/80 bg-surface/30 px-3 py-2 text-center backdrop-blur sm:bottom-4 sm:left-4 sm:right-4 sm:rounded-2xl sm:px-4 sm:py-3">
             <p className="text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-secondary sm:text-xs sm:tracking-[0.2em]">Registered Behavior Technician</p>
             <p className="mt-1 rounded-lg bg-surface/30 px-1.5 py-1 text-[0.72rem] leading-snug text-black sm:rounded-xl sm:text-sm">Focused on emotional regulation, communication skills, and family-centered routines.</p>
           </div>
