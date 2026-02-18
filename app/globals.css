@@ -19,19 +19,19 @@
 }
 
 :root.dark {
-  --background: #1f1b2d;
-  --foreground: #f7f2e7;
-  --muted: #cbc3df;
-  --surface: #2d2740;
-  --surface-alt: #3a3552;
-  --border: #544d6f;
-  --primary: #d0adee;
-  --primary-foreground: #2a1f39;
-  --secondary: #b1d7ea;
-  --secondary-foreground: #1f3642;
-  --accent-coral: #bee0ad;
-  --accent-yellow: #e7dbb6;
-  --accent-sky: #bcd8ec;
+  --background: #3a3651;
+  --foreground: #f9f6ee;
+  --muted: #ddd5eb;
+  --surface: #4c4866;
+  --surface-alt: #5a5878;
+  --border: #8f88ad;
+  --primary: #dbc2f2;
+  --primary-foreground: #36284c;
+  --secondary: #c5e3f2;
+  --secondary-foreground: #21404e;
+  --accent-coral: #d1ecbe;
+  --accent-yellow: #f2e7c6;
+  --accent-sky: #cfe5f3;
 }
 
 :root.light {
@@ -67,6 +67,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {

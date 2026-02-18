@@ -21,7 +21,7 @@ export default function Hero() {
               />
             </div>
           </div>
-          <div className="absolute bottom-2 left-2 right-2 rounded-xl border border-border/80 bg-surface/50 px-2.5 py-1.5 text-center backdrop-blur sm:bottom-4 sm:left-4 sm:right-4 sm:rounded-2xl sm:px-4 sm:py-3">
+          <div className="absolute inset-x-0 bottom-2 mx-auto w-[88%] max-w-[15rem] rounded-xl border border-border/80 bg-surface/50 px-2 py-1.5 text-center backdrop-blur sm:inset-x-4 sm:bottom-4 sm:w-auto sm:max-w-none sm:rounded-2xl sm:px-4 sm:py-3">
             <p className="text-[0.5rem] font-semibold uppercase tracking-[0.18em] text-secondary sm:text-xs sm:tracking-[0.2em]">Registered Behavior Technician</p>
             <p className="mt-1 rounded-lg bg-surface/35 px-1.5 py-1 text-[0.62rem] leading-snug text-black sm:rounded-xl sm:text-sm">Focused on emotional regulation, communication skills, and family-centered routines.</p>
           </div>
@@ -55,7 +55,7 @@ export default function Hero() {
             {highlights.map((item) => (
               <span
                 key={item}
-                className="rounded-full border border-border/70 bg-background/80 px-2.5 py-1 text-center leading-tight opacity-95 transition hover:border-secondary/50 hover:bg-surface-alt/75 sm:px-2.5 sm:py-1.5 lg:px-3 lg:py-1.5"
+                className="inline-flex min-h-7 max-w-[9.25rem] items-center justify-center rounded-full border border-border/70 bg-background/80 px-2 py-1 text-center text-[0.56rem] leading-tight opacity-95 transition hover:border-secondary/50 hover:bg-surface-alt/75 sm:min-h-0 sm:max-w-none sm:px-2.5 sm:py-1.5 sm:text-xs lg:px-3 lg:py-1.5"
               >
                 {item}
               </span>
