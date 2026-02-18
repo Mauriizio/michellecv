@@ -9,15 +9,21 @@ export default function Hero() {
       <div className="pointer-events-none absolute bottom-0 left-0 h-48 w-48 rounded-full bg-secondary/10 blur-3xl" />
 
       <div className="relative grid items-center gap-4 sm:gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10">
-        <div className="relative order-1 mx-auto w-full max-w-[17rem] sm:max-w-sm lg:order-2 lg:max-w-none">
+        <div className="relative order-1 mx-auto w-full max-w-[17.5rem] sm:max-w-[20rem] lg:order-2 lg:max-w-none">
           <div className="lift-hover overflow-hidden rounded-[1.5rem] border border-border bg-surface-alt p-2.5 sm:rounded-[1.8rem] sm:p-3">
-            <div className="relative h-[13rem] overflow-hidden rounded-[1.1rem] sm:h-[23rem] sm:rounded-[1.3rem]">
-              <Image src="/perfil2.png" alt="Michelle Hernandez, RBT" fill className="object-cover transition duration-500 hover:scale-105" />
+            <div className="relative h-[22rem] overflow-hidden rounded-[1.1rem] sm:h-[28rem] sm:rounded-[1.3rem] lg:h-[30rem]">
+              <Image
+                src="/perfil2.png"
+                alt="Michelle Hernandez, RBT"
+                fill
+                className="object-cover object-top transition duration-500 hover:scale-105"
+                priority
+              />
             </div>
           </div>
-          <div className="absolute bottom-3 left-3 right-3 rounded-xl border border-border/80 bg-surface/30 px-3 py-2 text-center backdrop-blur sm:bottom-4 sm:left-4 sm:right-4 sm:rounded-2xl sm:px-4 sm:py-3">
-            <p className="text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-secondary sm:text-xs sm:tracking-[0.2em]">Registered Behavior Technician</p>
-            <p className="mt-1 rounded-lg bg-surface/30 px-1.5 py-1 text-[0.72rem] leading-snug text-black sm:rounded-xl sm:text-sm">Focused on emotional regulation, communication skills, and family-centered routines.</p>
+          <div className="absolute bottom-2 left-2 right-2 rounded-xl border border-border/80 bg-surface/50 px-2.5 py-1.5 text-center backdrop-blur sm:bottom-4 sm:left-4 sm:right-4 sm:rounded-2xl sm:px-4 sm:py-3">
+            <p className="text-[0.5rem] font-semibold uppercase tracking-[0.18em] text-secondary sm:text-xs sm:tracking-[0.2em]">Registered Behavior Technician</p>
+            <p className="mt-1 rounded-lg bg-surface/35 px-1.5 py-1 text-[0.62rem] leading-snug text-black sm:rounded-xl sm:text-sm">Focused on emotional regulation, communication skills, and family-centered routines.</p>
           </div>
         </div>
 
@@ -45,11 +51,11 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-1.5 text-[0.68rem] text-muted sm:grid sm:grid-cols-3 sm:gap-2.5 sm:text-sm lg:justify-start">
+          <div className="flex flex-wrap justify-center gap-1.5 text-[0.62rem] text-muted sm:grid sm:grid-cols-3 sm:gap-2 sm:text-xs lg:justify-start lg:text-[0.82rem]">
             {highlights.map((item) => (
               <span
                 key={item}
-                className="rounded-full border border-secondary/25 bg-secondary/10 px-2.5 py-1 text-center transition hover:border-primary/60 sm:border-border sm:bg-surface-alt sm:px-3 sm:py-2"
+                className="rounded-full border border-border/70 bg-background/80 px-2.5 py-1 text-center leading-tight opacity-95 transition hover:border-secondary/50 hover:bg-surface-alt/75 sm:px-2.5 sm:py-1.5 lg:px-3 lg:py-1.5"
               >
                 {item}
               </span>

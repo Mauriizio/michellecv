@@ -1,51 +1,53 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5f8ff;
-  --foreground: #0f1830;
-  --muted: #5e6d8b;
-  --surface: #ffffff;
-  --surface-alt: #eef3ff;
-  --border: #d5e0f7;
-  --primary: #2f55d4;
-  --primary-foreground: #f4f7ff;
-  --secondary: #138e85;
-  --secondary-foreground: #effffb;
-  --accent-coral: #ff7b7b;
-  --accent-yellow: #ffc857;
-  --accent-sky: #57b5ff;
+  --font-sans: "Figtree", "Nunito", system-ui, -apple-system, sans-serif;
+  --font-display: "Ysabeau Office", "Lora", Georgia, serif;
+  --background: #f4efe2;
+  --foreground: #2f2840;
+  --muted: #6d6487;
+  --surface: #fffaf0;
+  --surface-alt: #dff0fb;
+  --border: #cfc8b8;
+  --primary: #c39be8;
+  --primary-foreground: #2f2141;
+  --secondary: #a8d1e8;
+  --secondary-foreground: #1f3544;
+  --accent-coral: #c6eab5;
+  --accent-yellow: #f0ead4;
+  --accent-sky: #c9e4f7;
 }
 
 :root.dark {
-  --background: #151b2b;
-  --foreground: #edf2ff;
-  --muted: #b8c2da;
-  --surface: #202a42;
-  --surface-alt: #2a3656;
-  --border: #3b4f78;
-  --primary: #9bb2ff;
-  --primary-foreground: #112042;
-  --secondary: #73dccc;
-  --secondary-foreground: #0d322b;
-  --accent-coral: #ffa0a0;
-  --accent-yellow: #ffdc85;
-  --accent-sky: #95d1ff;
+  --background: #1f1b2d;
+  --foreground: #f7f2e7;
+  --muted: #cbc3df;
+  --surface: #2d2740;
+  --surface-alt: #3a3552;
+  --border: #544d6f;
+  --primary: #d0adee;
+  --primary-foreground: #2a1f39;
+  --secondary: #b1d7ea;
+  --secondary-foreground: #1f3642;
+  --accent-coral: #bee0ad;
+  --accent-yellow: #e7dbb6;
+  --accent-sky: #bcd8ec;
 }
 
 :root.light {
-  --background: #f5f8ff;
-  --foreground: #0f1830;
-  --muted: #5e6d8b;
-  --surface: #ffffff;
-  --surface-alt: #eef3ff;
-  --border: #d5e0f7;
-  --primary: #2f55d4;
-  --primary-foreground: #f4f7ff;
-  --secondary: #138e85;
-  --secondary-foreground: #effffb;
-  --accent-coral: #ff7b7b;
-  --accent-yellow: #ffc857;
-  --accent-sky: #57b5ff;
+  --background: #f4efe2;
+  --foreground: #2f2840;
+  --muted: #6d6487;
+  --surface: #fffaf0;
+  --surface-alt: #dff0fb;
+  --border: #cfc8b8;
+  --primary: #c39be8;
+  --primary-foreground: #2f2141;
+  --secondary: #a8d1e8;
+  --secondary-foreground: #1f3544;
+  --accent-coral: #c6eab5;
+  --accent-yellow: #f0ead4;
+  --accent-sky: #c9e4f7;
 }
 
 @theme inline {
@@ -69,11 +71,21 @@ html {
 
 body {
   background:
-    radial-gradient(circle at 0% 0%, color-mix(in srgb, var(--primary) 16%, transparent), transparent 34%),
-    radial-gradient(circle at 100% 38%, color-mix(in srgb, var(--secondary) 12%, transparent), transparent 33%),
+    radial-gradient(circle at 0% 0%, color-mix(in srgb, var(--primary) 26%, transparent), transparent 38%),
+    radial-gradient(circle at 100% 38%, color-mix(in srgb, var(--secondary) 22%, transparent), transparent 36%),
+    radial-gradient(circle at 30% 100%, color-mix(in srgb, var(--accent-coral) 20%, transparent), transparent 42%),
     var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
 }
 
 @keyframes floatY {
@@ -88,15 +100,15 @@ body {
 
 @layer components {
   .section-shell {
-    @apply rounded-[2rem] border border-border bg-surface shadow-[0_28px_70px_-42px_rgba(12,20,42,0.46)];
+    @apply rounded-[2rem] border border-border bg-surface/95 shadow-[0_28px_70px_-42px_rgba(91,64,138,0.42)];
   }
 
   .section-shell-soft {
-    @apply rounded-[2rem] border border-border/70 bg-gradient-to-br from-surface to-surface-alt shadow-[0_24px_60px_-40px_rgba(12,20,42,0.35)];
+    @apply rounded-[2rem] border border-border/80 bg-gradient-to-br from-surface to-surface-alt shadow-[0_24px_60px_-40px_rgba(76,129,163,0.4)];
   }
 
   .lift-hover {
-    @apply transition duration-300 ease-out hover:-translate-y-1.5 hover:shadow-[0_24px_55px_-35px_rgba(47,85,212,0.45)];
+    @apply transition duration-300 ease-out hover:-translate-y-1.5 hover:shadow-[0_24px_55px_-35px_rgba(195,155,232,0.7)];
   }
 
   .shine-hover {
@@ -106,9 +118,9 @@ body {
   .playful-gradient {
     background: linear-gradient(
       130deg,
-      color-mix(in srgb, var(--accent-coral) 26%, var(--surface)),
-      color-mix(in srgb, var(--accent-yellow) 22%, var(--surface)),
-      color-mix(in srgb, var(--accent-sky) 24%, var(--surface))
+      color-mix(in srgb, var(--primary) 34%, var(--surface)),
+      color-mix(in srgb, var(--secondary) 28%, var(--surface)),
+      color-mix(in srgb, var(--accent-coral) 30%, var(--surface))
     );
   }
 

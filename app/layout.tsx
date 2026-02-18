@@ -1,16 +1,6 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
-import { Lora, Nunito } from "next/font/google";
-
-const nunito = Nunito({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
-
-const lora = Lora({
-  subsets: ["latin"],
-  variable: "--font-display",
-});
 
 export default function RootLayout({
   children,
@@ -19,9 +9,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${nunito.variable} ${lora.variable} min-h-screen bg-background text-foreground antialiased`}
-      >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="min-h-screen bg-background text-foreground antialiased">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

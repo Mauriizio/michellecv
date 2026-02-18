@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const credentials = [
   {
-    title: "Associate Degree (Valencia College)",
-    subtitle: "Associate in Arts",
+    title: "Bachelor of Arts in Psychology (FIU)",
+    subtitle: "Magna Cum Laude",
     description:
-      "Academic foundation in child development and behavioral support.",
-    src: "/credentials/cert1.png",
+      "Undergraduate degree focused on psychology, development, and behavioral sciences.",
+    src: "/credentials/cert4.png",
     aspect: "aspect-[4/3]",
     order: "md:order-1",
     isId: false,

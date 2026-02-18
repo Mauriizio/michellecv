@@ -1,16 +1,26 @@
 import Image from "next/image";
 
-const testimonials = [
+type Testimonial = {
+  quote: string;
+  author: string;
+  avatarSrc?: string;
+};
+
+const testimonials: Testimonial[] = [
   {
-    quote: "Michelle has been incredibly patient and organized with our son. We finally have routines that work at home.",
-    author: "Emily R.",
+    quote:
+      "Michelle has been a blessing for our family. My son has improved so much in concentration and confidence, and now he works more independently. You can tell she is patient and truly cares about his progress. I recommend her with my eyes closed!",
+    author: "Yaremy Fumero",
+    avatarSrc: "/reco/1.png",
   },
   {
-    quote: "Communication is excellent. We always know what was practiced and how to reinforce progress during the week.",
+    quote:
+      "Communication is excellent. We always know what was practiced and how to reinforce progress during the week.",
     author: "David M.",
   },
   {
-    quote: "Her calm approach reduced daily stress and improved our child’s confidence in social situations.",
+    quote:
+      "Her calm approach reduced daily stress and improved our child’s confidence in social situations.",
     author: "Sophia L.",
   },
 ];
@@ -36,7 +46,7 @@ export default function Testimonials() {
                 ))}
               </div>
               <div className="relative h-10 w-10 overflow-hidden rounded-full border border-border bg-surface">
-                <Image src="/logo.png" alt="Client avatar" fill className="object-cover" />
+                <Image src={item.avatarSrc ?? "/logo.png"} alt={`Photo of ${item.author}`} fill className="object-cover" />
               </div>
             </div>
             <p className="text-sm leading-relaxed text-foreground/90">“{item.quote}”</p>
