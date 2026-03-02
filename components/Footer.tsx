@@ -39,6 +39,13 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      <div className="relative border-t border-border/70 px-6 py-4 text-center">
+        <p className="text-xs text-muted">
+          Web hecha por{" "}
+          <a href="https://maurizio.dev" target="_blank" rel="noreferrer" className="font-semibold text-foreground underline decoration-primary/60 underline-offset-2 hover:text-primary">maurizio.dev</a>
+        </p>
+      </div>
     </footer>
   );
 }

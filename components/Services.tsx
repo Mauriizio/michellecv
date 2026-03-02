@@ -21,6 +21,12 @@ const services = [
   },
 ];
 
+const abaBenefits = [
+  "Enhancing language and communication abilities",
+  "Augmenting attention, concentration, social aptitude, memory, and academic performance",
+  "Decrease problem behaviors",
+];
+
 export default function Services() {
   return (
     <section id="services" className="section-shell px-6 py-10 sm:px-10 lg:px-12">
@@ -44,6 +50,21 @@ export default function Services() {
           </article>
         ))}
       </div>
+
+      <article className="mt-8 rounded-2xl border border-border bg-surface-alt p-6">
+        <h3 className="text-xl font-semibold text-foreground">What is ABA?</h3>
+        <p className="mt-2 text-sm leading-relaxed text-foreground/90 sm:text-base">
+          The core of behavior analysis interventions is teaching. Using the principles and techniques of Applied
+          Behavior Analysis, we teach the skills each child is missing to bring meaningful and positive change in
+          behavior.
+        </p>
+        <p className="mt-3 text-sm font-semibold text-foreground sm:text-base">ABA therapy programs can help with:</p>
+        <ul className="mt-3 space-y-2 text-sm text-foreground/90 sm:text-base">
+          {abaBenefits.map((benefit) => (
+            <li key={benefit}>• {benefit}</li>
+          ))}
+        </ul>
+      </article>
     </section>
   );
 }

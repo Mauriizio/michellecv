@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import PlayfulShowcase from "@/components/PlayfulShowcase";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 }

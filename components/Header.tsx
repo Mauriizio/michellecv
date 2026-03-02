@@ -1,8 +1,10 @@
 "use client";
 
-import ThemeToggle from "@/components/ThemeToggle";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { useState } from "react";
+
+const ThemeToggle = dynamic(() => import("@/components/ThemeToggle"), { ssr: false });
 
 const navItems = [
   { label: "Home", href: "#home" },
